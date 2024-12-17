@@ -21,7 +21,7 @@ function CatalogPartPage({ query }: { query: IQueryParams }) {
     (subpath: string) => subpath.replace('catalog', 'Каталог'),
     []
   )
-  const getTextGenerator = useCallback((param: string) => ({}[param]), [])
+  const getTextGenerator = useCallback((param: string) => ({})[param], [])
   const lastCrumb = document.querySelector('.last-crumb') as HTMLElement
 
   useEffect(() => {

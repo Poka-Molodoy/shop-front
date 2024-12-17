@@ -8,7 +8,7 @@ import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs'
 function Order() {
   const { shouldLoadContent } = useRedirectByUserCheck()
   const getDefaultTextGenerator = useCallback(() => 'Оформление заказа', [])
-  const getTextGenerator = useCallback((param: string) => ({}[param]), [])
+  const getTextGenerator = useCallback((param: string) => ({})[param], [])
 
   return (
     <>
