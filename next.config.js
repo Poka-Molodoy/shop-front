@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports = {
+  experimental: {
+    appDir: true,
+  },
   reactStrictMode: true,
   sassOptions: {
     fiber: false,
   },
 }
-
-module.exports = nextConfig
