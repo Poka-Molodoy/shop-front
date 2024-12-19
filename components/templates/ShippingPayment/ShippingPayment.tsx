@@ -50,41 +50,37 @@ const ShippingPayment = () => {
     <section className={styles.shipping_payment}>
       <div className="container">
         <h2 className={`${styles.shipping_payment__title} ${darkModeClass}`}>
-          Доставка и оплата
+          Доставка и оплата вашей обуви
         </h2>
         <div className={`${styles.shipping_payment__tabs} ${darkModeClass}`}>
           <ul className={styles.shipping_payment__tabs__controls}>
             <li
-              className={`${styles.shipping_payment__tabs__controls__item} ${
-                tab1 ? styles.active : ''
-              } ${darkModeClass}`}
+              className={`${styles.shipping_payment__tabs__controls__item} ${tab1 ? styles.active : ''
+                } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab1}>
                 Как работает курьерская доставка?
               </button>
             </li>
             <li
-              className={`${styles.shipping_payment__tabs__controls__item} ${
-                tab2 ? styles.active : ''
-              } ${darkModeClass}`}
+              className={`${styles.shipping_payment__tabs__controls__item} ${tab2 ? styles.active : ''
+                } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab2}>
                 Как получить товар из пункта самовывоза?
               </button>
             </li>
             <li
-              className={`${styles.shipping_payment__tabs__controls__item} ${
-                tab3 ? styles.active : ''
-              } ${darkModeClass}`}
+              className={`${styles.shipping_payment__tabs__controls__item} ${tab3 ? styles.active : ''
+                } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab3}>
                 Какие способы оплаты?
               </button>
             </li>
             <li
-              className={`${styles.shipping_payment__tabs__controls__item} ${
-                tab4 ? styles.active : ''
-              } ${darkModeClass}`}
+              className={`${styles.shipping_payment__tabs__controls__item} ${tab4 ? styles.active : ''
+                } ${darkModeClass}`}
             >
               <button className={darkModeClass} onClick={handleTab4}>
                 Как узнать статус заказанного товара?
