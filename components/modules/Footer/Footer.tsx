@@ -69,7 +69,9 @@ const Footer = () => {
                   <a className={styles.footer__top__item__list__item__link}>
                     <span>Наш адрес:</span>
                     <span> г. Ижевск, ул. Ижевская д. 44</span>
-                    <span>
+                    <span
+                      style={{ marginTop: '30px' }}
+                    >
                       <MarkerSvg />
                     </span>
                   </a>
@@ -94,7 +96,9 @@ const Footer = () => {
                 >
                   <span>E-mail:</span>
                   <span>kostya.murin@gmail.com</span>
-                  <span>
+                  <span
+
+                  >
                     <MailSvg />
                   </span>
                 </a>
@@ -113,13 +117,13 @@ const Footer = () => {
                   <img src="/img/mir-logo-h229px.png" alt="mir-pay" style={{ width: '200px', height: '50px' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/mastercard-logo.png" alt="mastercard-pay" style={{ width: '250px', height: '100%' }} />
+                  <img src="/img/mastercard-logo.png" alt="mastercard-pay" style={{ width: '150px', height: '100%' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/visa-icon.png" alt="visa-card" style={{ width: '250px', height: '100%' }} />
+                  <img src="/img/visa-icon.png" alt="visa-card" style={{ width: '150px', height: '100%' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/SBP.png" alt="sbp" style={{ width: '250px', height: '100%' }} />
+                  <img src="/img/SBP.png" alt="sbp" style={{ width: '150px', height: '100%' }} />
                 </li>
               </ul>
             </div>
