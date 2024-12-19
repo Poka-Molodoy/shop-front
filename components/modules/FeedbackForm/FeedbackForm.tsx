@@ -79,7 +79,7 @@ const FeedbackForm = () => {
             {spinner ? (
               <span
                 className={spinnerStyles.spinner}
-                style={{ top: '6px', left: '47%' }}
+                style={{ top: '6px', left: '47%', height: '100px' }}
               />
             ) : (
               'Отправить сообщение'

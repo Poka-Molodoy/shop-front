@@ -44,8 +44,10 @@ const HeaderBottom = () => {
         <div className={styles.header__search}>
           <SearchInput />
         </div>
-        <div className={styles.header__shopping_cart}>
-          {!isMedia950}
+        <div className={styles.header__shopping_cart}
+          style={{ marginLeft: '50px' }}
+        >
+
           <CartPopup />
         </div>
       </div>

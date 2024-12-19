@@ -125,7 +125,7 @@ const Footer = () => {
                   <img src="/img/visa-icon.png" alt="visa-card" style={{ width: '150px', height: '100%' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/SBP.png" alt="sbp" style={{ width: '130px', height: '100%' }} />
+                  <img src="/img/SBP.png" alt="sbp" style={{ width: '120px', height: '100%' }} />
                 </li>
               </ul>
             </div>

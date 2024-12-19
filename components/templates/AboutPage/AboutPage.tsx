@@ -27,9 +27,6 @@ const AboutPage = () => {
               Electrolux, Ferroli, Fondital, Immergas, Junkers, Koreastar, Nova Florida, Saunier Duval,
               Sime, Tiberis, Vaillant, Viessmann и Westen. </p>
           </div>
-          <div className={`${styles.about__img} ${styles.about__img__bottom}`}>
-            <img src="/img/austin-distel-wawEfYdpkag-unsplash.jpg" alt="image-2" />
-          </div>
         </div>
       </div>
     </section>
