@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useStore } from 'effector-react'
-import CityButton from '@/components/elements/CityButton/CityButton'
 import ProfileDropdown from './ProfileDropdown'
 import { useMediaQuery } from '@/hooks/useMediaQuery'
 import ModeToggler from '@/components/elements/ModeToggler/ModeToggler'
@@ -17,7 +16,6 @@ const HeaderTop = () => {
   return (
     <div className={styles.header__top}>
       <div className={`container ${styles.header__top__container}`}>
-        {!isMedia950 && <CityButton />}
         {isMedia950 && (
           <button
             onClick={toggleOpen}
@@ -84,11 +82,7 @@ const HeaderTop = () => {
                 </a>
               </Link>
             </li>
-            {isMedia950 && (
-              <li className={styles.header__nav__list__item}>
-                <CityButton />
-              </li>
-            )}
+            {isMedia950}
             {isMedia950 && (
               <li className={styles.header__nav__list__item}>
                 <ModeToggler />
