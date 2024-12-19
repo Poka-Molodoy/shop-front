@@ -113,13 +113,13 @@ const Footer = () => {
                   <img src="/img/mir-logo-h229px.png" alt="mir-pay" style={{ width: '200px', height: '50px' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/mastercard-logo.png" alt="mastercard-pay" style={{ width: '200px', height: '50px' }} />
+                  <img src="/img/mastercard-logo.png" alt="mastercard-pay" style={{ width: '200px', height: '100%' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/visa-icon.png" alt="visa-card" style={{ width: '200px', height: '50px' }} />
+                  <img src="/img/visa-icon.png" alt="visa-card" style={{ width: '200px', height: '100%' }} />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/SBP.png" alt="sbp" style={{ width: '200px', height: '50px' }} />
+                  <img src="/img/SBP.png" alt="sbp" style={{ width: '200px', height: '100%' }} />
                 </li>
               </ul>
             </div>
