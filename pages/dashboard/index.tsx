@@ -21,10 +21,6 @@ function Dashboard() {
       {shouldLoadContent && (
         <Layout>
           <main>
-            <Breadcrumbs
-              getDefaultTextGenerator={getDefaultTextGenerator}
-              getTextGenerator={getTextGenerator}
-            />
             <DashboardPage />
             <div className="overlay" />
           </main>

@@ -15,7 +15,7 @@ const AboutPage = () => {
         </h2>
         <div className={styles.about__inner}>
           <div className={`${styles.about__img} ${styles.about__img__top}`}>
-            <img src="/img/lycs-architecture-U2BI3GMnSSE-unsplash.jpg" alt="image-1" />
+            <img src="/img/lycs-architecture-U2BI3GMnSSE-unsplash.jpg" alt="image-1" style={{ objectFit: 'cover' }} />
           </div>
           <div className={`${styles.about__info} ${darkModeClass}`}>
             <p> Интернет-магазин &quot;ХРОМ Детеилс&quot;

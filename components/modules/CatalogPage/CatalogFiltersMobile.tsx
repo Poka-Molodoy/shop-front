@@ -64,13 +64,12 @@ const CatalogFiltersMobile = ({
 
   return (
     <div
-      className={`${styles.catalog__bottom__filters} ${darkModeClass} ${
-        filtersMobileOpen ? styles.open : ''
-      }`}
+      className={`${styles.catalog__bottom__filters} ${darkModeClass} ${filtersMobileOpen ? styles.open : ''
+        }`}
     >
       <div className={styles.catalog__bottom__filters__inner}>
         <FiltersPopupTop
-          resetBtnText="Сбросить все"
+          resetBtnText="Сбросить"
           title="Фильтры"
           resetFilters={resetFilters}
           resetFilterBtnDisabled={resetFilterBtnDisabled}
@@ -84,7 +83,7 @@ const CatalogFiltersMobile = ({
             Производитель котлов
           </button>
           <FiltersPopup
-            title="Производитель котлов"
+            title="Производитель"
             resetFilterBtnDisabled={!isAnyBoilerManufacturerChecked}
             updateManufacturer={updateBoilerManufacturer}
             setManufacturer={setBoilerManufacturers}
@@ -103,7 +102,7 @@ const CatalogFiltersMobile = ({
             Производитель запчастей
           </button>
           <FiltersPopup
-            title="Производитель запчастей"
+            title="Дистрибьютор"
             resetFilterBtnDisabled={!isAnyPartsManufacturerChecked}
             updateManufacturer={updatePartsManufacturer}
             setManufacturer={setPartsManufacturers}
