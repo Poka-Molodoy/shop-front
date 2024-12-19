@@ -82,7 +82,7 @@ const HeaderTop = () => {
                 </a>
               </Link>
             </li>
-            {isMedia950}
+            {!isMedia950 && <ModeToggler />}
             {isMedia950 && (
               <li className={styles.header__nav__list__item}>
                 <ModeToggler />
