@@ -143,18 +143,15 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
         checkQueryParams(router)
 
       const result = await getBoilerPartsFx(
-        `/boiler-parts?limit=20&offset=${selected}${
-          isFilterInQuery && isValidBoilerQuery
-            ? `&boiler=${router.query.boiler}`
-            : ''
-        }${
-          isFilterInQuery && isValidPartsQuery
-            ? `&parts=${router.query.parts}`
-            : ''
-        }${
-          isFilterInQuery && isValidPriceQuery
-            ? `&priceFrom=${router.query.priceFrom}&priceTo=${router.query.priceTo}`
-            : ''
+        `/boiler-parts?limit=20&offset=${selected}${isFilterInQuery && isValidBoilerQuery
+          ? `&boiler=${router.query.boiler}`
+          : ''
+        }${isFilterInQuery && isValidPartsQuery
+          ? `&parts=${router.query.parts}`
+          : ''
+        }${isFilterInQuery && isValidPriceQuery
+          ? `&priceFrom=${router.query.priceFrom}&priceTo=${router.query.priceTo}`
+          : ''
         }`
       )
 
@@ -217,7 +214,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
           <AnimatePresence>
             {isAnyBoilerManufacturerChecked && (
               <ManufacturersBlock
-                title="Производитель котлов:"
+                title="Производители:"
                 event={updateBoilerManufacturer}
                 manufacturersList={boilerManufacturers}
               />
@@ -226,7 +223,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
           <AnimatePresence>
             {isAnyPartsManufacturerChecked && (
               <ManufacturersBlock
-                title="Производитель запчастей:"
+                title="Дистрибьютор:"
                 event={updatePartsManufacturer}
                 manufacturersList={partsManufacturers}
               />
@@ -238,7 +235,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
               disabled={resetFilterBtnDisabled}
               onClick={resetFilters}
             >
-              Сбросить фильтр
+              Сбросить
             </button>
             <button
               className={styles.catalog__top__mobile_btn}
@@ -273,9 +270,8 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                 {Array.from(new Array(20)).map((_, i) => (
                   <li
                     key={i}
-                    className={`${skeletonStyles.skeleton__item} ${
-                      mode === 'dark' ? `${skeletonStyles.dark_mode}` : ''
-                    }`}
+                    className={`${skeletonStyles.skeleton__item} ${mode === 'dark' ? `${skeletonStyles.dark_mode}` : ''
+                      }`}
                   >
                     <div className={skeletonStyles.skeleton__item__light} />
                   </li>
@@ -288,7 +284,7 @@ const CatalogPage = ({ query }: { query: IQueryParams }) => {
                     <CatalogItem item={item} key={item.id} />
                   ))
                 ) : (
-                  <span>Список товаров пуст...</span>
+                  <span>Товары не найдены...</span>
                 )}
               </ul>
             )}

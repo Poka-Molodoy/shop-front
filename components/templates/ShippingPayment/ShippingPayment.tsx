@@ -50,7 +50,7 @@ const ShippingPayment = () => {
     <section className={styles.shipping_payment}>
       <div className="container">
         <h2 className={`${styles.shipping_payment__title} ${darkModeClass}`}>
-          Доставка и оплата вашей обуви
+          Доставка и оплата ваших заказов
         </h2>
         <div className={`${styles.shipping_payment__tabs} ${darkModeClass}`}>
           <ul className={styles.shipping_payment__tabs__controls}>
