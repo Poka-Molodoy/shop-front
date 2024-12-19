@@ -128,7 +128,7 @@ const SearchInput = () => {
     setOnMenuOpenControlStyles({
       borderBottomLeftRadius: 4,
       boxShadow: 'none',
-      border: '1px solid #9e9e9e',
+      border: '2px solid #9e9e9e',
     })
     setOnMenuOpenContainerStyles({
       boxShadow: 'none',
@@ -147,7 +147,7 @@ const SearchInput = () => {
           components={{
             NoOptionsMessage: spinner ? NoOptionsSpinner : NoOptionsMessage,
           }}
-          placeholder="Я ищу..."
+          placeholder="Что хотите найти сегодня?"
           value={searchOption}
           onChange={handleSearchOptionChange}
           styles={{
@@ -192,12 +192,11 @@ const SearchInput = () => {
         style={{ zIndex }}
         onClick={handleSearchClick}
       >
-        <span className={styles.header__search__btn__span}>
+        <span className={styles.header__search__btn__span} style={{ marginTop: '5px' }}>
           <SearchSvg />
         </span>
       </button>
     </>
   )
 }
-
 export default SearchInput

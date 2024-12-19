@@ -21,9 +21,8 @@ const HeaderTop = () => {
         {isMedia950 && (
           <button
             onClick={toggleOpen}
-            className={`${styles.burger_menu} ${
-              open ? styles.open : ''
-            } ${darkModeClass}`}
+            className={`${styles.burger_menu} ${open ? styles.open : ''
+              } ${darkModeClass}`}
           >
             <span />
             <span />
@@ -31,9 +30,8 @@ const HeaderTop = () => {
           </button>
         )}
         <nav
-          className={`${styles.header__nav} ${
-            open ? styles.open : ''
-          } ${darkModeClass}`}
+          className={`${styles.header__nav} ${open ? styles.open : ''
+            } ${darkModeClass}`}
         >
           <ul className={styles.header__nav__list}>
             <li className={styles.header__nav__list__item}>
@@ -82,7 +80,7 @@ const HeaderTop = () => {
                   className={`${styles.header__nav__list__item__link} ${darkModeClass}`}
                   onClick={closePopup}
                 >
-                  Оптовым покупателям
+                  Сотрудничество
                 </a>
               </Link>
             </li>
