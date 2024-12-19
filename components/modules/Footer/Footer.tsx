@@ -24,14 +24,14 @@ const Footer = () => {
               {!isMedia500 && (
                 <>
                   <h3 className={styles.footer__top__item__title}>
-                    Интернет-магазин
+                    Для вас
                   </h3>
                   <OnlineStoreContent />
                 </>
               )}
               {isMedia500 && (
                 <Accordion
-                  title="Интернет-магазин"
+                  title="Для вас"
                   titleClass={styles.footer__top__item__title}
                   arrowOpenClass={styles.open}
                 >
@@ -49,7 +49,7 @@ const Footer = () => {
               )}
               {isMedia500 && (
                 <Accordion
-                  title="Компания"
+                  title="О нас"
                   titleClass={styles.footer__top__item__title}
                   arrowOpenClass={styles.open}
                 >
@@ -68,7 +68,7 @@ const Footer = () => {
                 <Link href="/contacts" passHref legacyBehavior>
                   <a className={styles.footer__top__item__list__item__link}>
                     <span>Наш адрес:</span>
-                    <span>г. Москва, ул. ... д....</span>
+                    <span> г. Ижевск, ул. Ижевская д. 44</span>
                     <span>
                       <MarkerSvg />
                     </span>
@@ -77,11 +77,11 @@ const Footer = () => {
               </li>
               <li className={styles.footer__top__item__list__item}>
                 <a
-                  href="tel:+780955555555"
+                  href="tel:+79999999999"
                   className={styles.footer__top__item__list__item__link}
                 >
                   <span>Наш контактный телефон:</span>
-                  <span>+7(8095) 555-55-55</span>
+                  <span>+7(999) 999-99-99</span>
                   <span>
                     <PhoneSvg />
                   </span>
@@ -89,11 +89,11 @@ const Footer = () => {
               </li>
               <li className={styles.footer__top__item__list__item}>
                 <a
-                  href="mailto:info@zapchasti.com.ru"
+                  href="mailto:kostya.murin@gmail.com"
                   className={styles.footer__top__item__list__item__link}
                 >
                   <span>E-mail:</span>
-                  <span>info@zapchasti.com.ru</span>
+                  <span>kostya.murin@gmail.com</span>
                   <span>
                     <MailSvg />
                   </span>
@@ -110,22 +110,22 @@ const Footer = () => {
               </h3>
               <ul className={styles.footer__bottom__block__pay}>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/pay.png" alt="apple-pay" />
+                  <img src="/img/mir-logo-h229px.png" alt="mir-pay" />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/gpay.png" alt="google-pay" />
+                  <img src="/img/mastercard-logo.png" alt="mastercard-pay" />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/master-card.png" alt="master-card" />
+                  <img src="/img/visa-icon.png" alt="visa-card" />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/visa.png" alt="visa" />
+                  <img src="/img/SBP.webp" alt="sbp" />
                 </li>
               </ul>
             </div>
             <div className={styles.footer__bottom__block__right}>
               <h3 className={styles.footer__bottom__block__title}>
-                Мы в соцсети:
+                Наши соцсети:
               </h3>
               <ul className={styles.footer__bottom__block__social}>
                 <li className={styles.footer__bottom__block__social__item}>
