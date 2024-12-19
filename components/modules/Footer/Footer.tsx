@@ -106,7 +106,7 @@ const Footer = () => {
           <div className={styles.footer__bottom__block}>
             <div className={styles.footer__bottom__block__left}>
               <h3 className={styles.footer__bottom__block__title}>
-                Мы принимаем к оплате:
+                Мы принимаем:
               </h3>
               <ul className={styles.footer__bottom__block__pay}>
                 <li className={styles.footer__bottom__block__pay__item}>
@@ -119,7 +119,7 @@ const Footer = () => {
                   <img src="/img/visa-icon.png" alt="visa-card" />
                 </li>
                 <li className={styles.footer__bottom__block__pay__item}>
-                  <img src="/img/SBP.webp" alt="sbp" />
+                  <img src="/img/SBP.png" alt="sbp" />
                 </li>
               </ul>
             </div>
@@ -130,26 +130,26 @@ const Footer = () => {
               <ul className={styles.footer__bottom__block__social}>
                 <li className={styles.footer__bottom__block__social__item}>
                   <a
-                    href="#"
+                    href="https://vk.com/xxxgeniousxxx"
                     className={styles.footer__bottom__block__social__item_vk}
                   />
                 </li>
                 <li className={styles.footer__bottom__block__social__item}>
                   <a
-                    href="#"
-                    className={styles.footer__bottom__block__social__item_fb}
+                    href="https://vk.com/fblr.fblr.fblr"
+                    className={styles.footer__bottom__block__social__item_vk}
                   />
                 </li>
                 <li className={styles.footer__bottom__block__social__item}>
                   <a
-                    href="#"
-                    className={styles.footer__bottom__block__social__item_inst}
+                    href="https://vk.com/damirjpn"
+                    className={styles.footer__bottom__block__social__item_vk}
                   />
                 </li>
                 <li className={styles.footer__bottom__block__social__item}>
                   <a
-                    href="#"
-                    className={styles.footer__bottom__block__social__item_ytb}
+                    href="https://vk.com/tagatoapekir"
+                    className={styles.footer__bottom__block__social__item_vk}
                   />
                 </li>
               </ul>
@@ -158,7 +158,7 @@ const Footer = () => {
           {isMedia750 && <FooterLogo />}
           <div className={styles.footer__bottom__block}>
             <p className={styles.footer__bottom__block__copyright}>
-              © «Детали для газовых котлов» 2021.
+              © ХРОМ Детеилс 2024
             </p>
           </div>
         </div>
