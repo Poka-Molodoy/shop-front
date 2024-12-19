@@ -75,12 +75,12 @@ const DashboardPage = () => {
             </motion.div>
           )}
         </AnimatePresence>
-        <div className={`${styles.about__img}`}>
-          <img src="/img/1234.jpg" alt="image-1" style={{ objectFit: 'cover', height: '500px', width: '100%' }} />
-        </div>
         <h2 className={`${styles.dashboard__title} ${darkModeClass}`}>
           Детали для ваших устройств
         </h2>
+        <div className={`${styles.about__img}`}>
+          <img src="/img/1234.jpg" alt="image-1" style={{ objectFit: 'cover', height: '500px', width: '100%' }} />
+        </div>
         <div className={styles.dashboard__brands}>
           <BrandsSlider />
         </div>
@@ -105,8 +105,7 @@ const DashboardPage = () => {
           <p className={`${styles.dashboard__about__text} ${darkModeClass}`}>
             Инструкции и схемы помогут разобраться в эксплуатации, определить
             неисправность и правильно выбрать запчасть для ремонта Вашего
-            газового оборудования. Купить запчасть, деталь для ремонта газового
-            котла возможно в любом населенном пункте Российской Федерации:
+            газового оборудования.
             Осуществляем доставку запчастей по всей Российской Федерации
           </p>
         </div>
