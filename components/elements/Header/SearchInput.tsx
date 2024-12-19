@@ -193,7 +193,7 @@ const SearchInput = () => {
         onClick={handleSearchClick}
       >
         <span className={styles.header__search__btn__span}
-          style={{ marginTop: '15px' }}
+          style={{ paddingTop: '15px' }}
         >
           <SearchSvg />
         </span>
