@@ -83,7 +83,7 @@ const AuthPage = () => {
                 className={`${styles.switch__description} ${styles.description} ${darkModeClass}`}
               >
                 Чтобы оставаться на связи с нами, пожалуйста, войдите под своей
-                личной информацией
+                учетной записью
               </p>
             </>
           )}
@@ -91,7 +91,7 @@ const AuthPage = () => {
             onClick={switchForm}
             className={`${styles.switch__button} ${styles.button} ${styles.switch__btn} ${darkModeClass}`}
           >
-            SIGN IN
+            Войти
           </button>
         </div>
         <div
@@ -104,7 +104,7 @@ const AuthPage = () => {
               <h2
                 className={`${styles.switch__title} ${styles.title} ${darkModeClass}`}
               >
-                Привет, друг!
+                Приветствуем!
               </h2>
               <p
                 className={`${styles.switch__description} ${styles.description} ${darkModeClass}`}
@@ -117,7 +117,7 @@ const AuthPage = () => {
             onClick={switchForm}
             className={`${styles.switch__button} ${styles.button} ${styles.switch__btn} ${darkModeClass}`}
           >
-            SIGN UP
+            Регистрация
           </button>
         </div>
       </div>
