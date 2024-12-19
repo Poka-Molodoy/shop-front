@@ -12,6 +12,9 @@ const ContactsPage = ({ isWholesaleBuyersPage = false }) => {
 
   return (
     <section className={styles.contacts}>
+      <div className={`${styles.about__img} ${styles.about__img__top}`}>
+        <img src="/img/lycs-architecture-U2BI3GMnSSE-unsplash.jpg" alt="image-1" />
+      </div>
       <div className="container">
         <h2 className={`${styles.contacts__title} ${darkModeClass}`}>
           {isWholesaleBuyersPage ? 'Сотрудничество' : 'Контакты'}
