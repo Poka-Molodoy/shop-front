@@ -27,16 +27,18 @@ const HeaderTop = () => {
             <span />
           </button>
         )}
+        {!isMedia950 && <ModeToggler />}
+        {isMedia950 && (
+          <li className={styles.header__nav__list__item}>
+            <ModeToggler />
+          </li>
+        )}
         <nav
           className={`${styles.header__nav} ${open ? styles.open : ''
             } ${darkModeClass}`}
         >
-          {!isMedia950 && <ModeToggler />}
-          {isMedia950 && (
-            <li className={styles.header__nav__list__item}>
-              <ModeToggler />
-            </li>
-          )}
+
+
           <ul className={styles.header__nav__list}>
             <li className={styles.header__nav__list__item}>
               <Link href="/shipping-payment" passHref legacyBehavior>
