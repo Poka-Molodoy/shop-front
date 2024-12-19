@@ -61,7 +61,7 @@ const SignUpForm = ({ switchForm }: { switchForm: () => void }) => {
       <button
         className={`${styles.form__button} ${styles.button} ${styles.submit} ${darkModeClass}`}
       >
-        {spinner ? <div className={spinnerStyles.spinner} /> : 'SIGN UP'}
+        {spinner ? <div className={spinnerStyles.spinner} /> : 'Регистрация'}
       </button>
     </form>
   )
